@@ -45,7 +45,23 @@ int main()
 			printf("%d / %d = %d\n", var1, var2, var1 / var2);
 		break;
 		
+		//Average
+		case 5:
+			printf("How many numbers do you want work out the average for?\n");
+			scanf("%d", &n);
 
+			printf("Enter %d variables:\n", n);
+			for(i = 0; i < n; i++)
+			{
+				scanf("%d", &num);
+				sum = sum + num;
+			}
+
+			avg = sum / n;
+			
+			printf("The average of those numbers is %f\n", avg);
+				
+		break;
 
 		//If wrong option is selected
 		default:
