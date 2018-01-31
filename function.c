@@ -7,7 +7,7 @@ int main()
 	int i, n, sum = 0, num;
 	float avg;	
 	
-	printf("1: Addition\n2: Subtraction\n");
+	printf("1: Addition\n2: Subtraction\n3: Multiplication\n");
 	printf("Enter the number correspoding to the function you want to perform:\n");
 	scanf("%d",&opt);
 	
@@ -29,6 +29,13 @@ int main()
 			printf("%d - %d = %d\n", var1, var2, var1 - var2);
 		break;
 
+		//Multiplication function
+		case 3:
+			printf("Enter 2 variables:\n");
+			scanf("%d%d", &var1, &var2);
+
+			printf("%d * %d = %d\n", var1, var2, var1 * var2);
+		break;
 
 	}	
 	return 0;
