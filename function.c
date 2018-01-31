@@ -21,3 +21,7 @@ int main()
 			printf("%d + %d = %d\n", var1, var2, var1 + var2);
 		break;
 		
+
+	}	
+	return 0;
+}
