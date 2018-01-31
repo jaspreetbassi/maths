@@ -7,7 +7,7 @@ int main()
 	int i, n, sum = 0, num;
 	float avg;	
 	
-	printf("1: Addition\n2: Subtraction\n3: Multiplication\n");
+	printf("1: Addition\n2: Subtraction\n3: Multiplication\n4: Division\n5:Average\n");
 	printf("Enter the number correspoding to the function you want to perform:\n");
 	scanf("%d",&opt);
 	
@@ -37,6 +37,20 @@ int main()
 			printf("%d * %d = %d\n", var1, var2, var1 * var2);
 		break;
 
+		//Division function
+		case 4:
+			printf("Enter 2 variables:\n");
+			scanf("%d%d", &var1, &var2);
+
+			printf("%d / %d = %d\n", var1, var2, var1 / var2);
+		break;
+		
+
+
+		//If wrong option is selected
+		default:
+			printf("Option not on the list\n");
+		break;
 	}	
 	return 0;
 }
